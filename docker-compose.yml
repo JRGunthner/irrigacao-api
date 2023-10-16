@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+  server:
+    build: .
+    command: npm start
+    ports:
+      - "80:80"
+    volumes:
+      - .:/usr/app
